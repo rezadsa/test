@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% for item in post_list %}
+        <h3>
+            {{item.text|capfirst}} 
+        </h3>
+    {% endfor %}
+{% endblock %}s
